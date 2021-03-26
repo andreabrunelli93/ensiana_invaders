@@ -7,7 +7,9 @@ define(['module/HUD'],function(HUD){
     
     var _End = {
         create: function(){
-            HUD.createTitle('  Game Over \n Press Spacebar');
+
+            var title_end = 'I tà copà \n Te meso in scarsela: ' + last_score+ ' ponti \n Maca el boton';
+            HUD.createTitle(title_end);
                         
             //Starting the Play state after the spacebar is down
             _game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR).onDown.addOnce(function(){

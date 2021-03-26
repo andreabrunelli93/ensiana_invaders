@@ -38,23 +38,23 @@ define(function(){
             //_stateText.visible = false;
         },
         updateHealthText: function(health){
-            _healthText.text = "Health: "+health;
+            _healthText.text = "Fià: "+health;
             last_health = health;
             console.log("salute ", health, "last_health ", last_health);
         },
         updateLivesText: function(lives){
-            _livesText.text = "Lives: "+lives;
+            _livesText.text = "Ensiane: "+lives;
             last_lives = lives;
             console.log("vite ", lives, "last_lives ", last_lives);
         },
         updateScoreText: function(score){
-            _scoreText.text = "Score: "+(_score+=score);
+            _scoreText.text = "Ponti: "+(_score+=score);
             last_score = _score;
             console.log("punteggio ",_score , "last_score ", last_score);
         },
         createTitle: function(title){
             _stateText = _game.add.text(_game.world.centerX,_game.world.centerY,
-                                            title,{font: '84px Arial',fill: '#fff'})
+                                            title, {font: '40px Arial',fill: '#fff'})
             _stateText.anchor.setTo(0.5,0.5);
         }
     }

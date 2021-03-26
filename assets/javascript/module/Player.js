@@ -70,7 +70,7 @@ define(['module/HUD'],function(HUD){
         },
         preload: function(){
             //_game.load.image('ship', 'assets/img/player.png');
-            _game.load.image('ship', 'assets/img/bottle_64.png');
+            _game.load.image('ship', 'assets/img/sauce_64.png');
         },
         create: function(configuration){
             _ship = _game.add.sprite(400,500,'ship');

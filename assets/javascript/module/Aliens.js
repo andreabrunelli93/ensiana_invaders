@@ -143,7 +143,7 @@ define(['module/HUD'],function(HUD){
         },
         preload: function(){
             //_game.load.spritesheet('invader', 'assets/img/invader32x32x4.png', 32, 32);
-            _game.load.spritesheet('invader', 'assets/img/plague_64x64x4.png', 64, 64);
+            _game.load.spritesheet('invader', 'assets/img/plague_32x32x4.png', 32, 32);
         },
         create: function(configuration){
             return( new _Aliens(configuration) );

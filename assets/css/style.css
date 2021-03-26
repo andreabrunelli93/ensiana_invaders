@@ -1,5 +1,7 @@
 body {
   background-color: #3e8013ab;
+  background-image: url("../img/background_texture.png");
+  background-repeat: repeat;
   /* Full height */
   height: 100%;
 }
@@ -8,57 +10,43 @@ body {
 }
 #game {
   position: fixed;
-  top: 30%;
+  position: fixed;
+  top: 50%;
   left: 50%;
-  margin-top: -300px;
-  margin-left: -400px;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+
+  justify-content: center;
+}
+
+#buttons_list {
+  display: inline-flex;
+  width: 100%;
+  list-style-type: none;
+  margin: 0 auto;
+  justify-content: center;
 }
 
 #commands {
   position: fixed;
   top: 80%;
+  width: 100%;
+  bottom: 10%;
 }
 
 .button {
   width: 300px;
   height: 200px;
   font-size: xx-large;
-}
-
-@media only screen and (min-width: 1025px) {
-  body {
-    background-image: url("lessinia_background.jpg");
-    /* Full height */
-    height: 100%;
-
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+  border-radius: 15%;
+  border: 3px solid #f7d909;
+  background-color: rgba(255, 255, 255, 0.603);
 }
 
 @media only screen and (max-device-width: 1000px) {
-  body {
-    /* background-color: #3e8013ab;
-        Full height */
-    background-color: #3e8013ab;
-    height: 100%;
-
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  #game {
-    position: fixed;
-    left: 20%;
-  }
-
   .button {
-    width: 20%;
-    height: 10%;
+    width: 100px;
+    height: 80px;
     font-size: large;
   }
 }

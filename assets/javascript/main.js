@@ -3,7 +3,15 @@
  */
 require(['state/Load','state/Start','state/Play','state/End','lib/phaser-no-physics.min'],function(Load,Start,Play,End){
 
-    var _game = new Phaser.Game(800, 600, Phaser.AUTO, 'game');
+    height = $(window).height();
+    width = $(window).width();
+    if( 0 < width < 800 ){
+        var _game = new Phaser.Game(700, 400, Phaser.AUTO, 'game');
+    }
+    else{
+        var _game = new Phaser.Game(800, 600, Phaser.AUTO, 'game');
+    }
+    
 
     
     //Load state

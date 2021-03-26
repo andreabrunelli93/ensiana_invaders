@@ -111,11 +111,11 @@ define(['module/HUD'],function(HUD){
                 return false;
 });
 
-            //if(_cursors.left.isDown){
-            //    _ship.body.velocity.x = -200;
-            //}else if(_cursors.right.isDown){
-            //    _ship.body.velocity.x = 200;
-            //}
+            if(_cursors.left.isDown){
+                _ship.body.velocity.x = -200;
+            }else if(_cursors.right.isDown){
+                _ship.body.velocity.x = 200;
+            }
         },
         setBulletGroup: function(bullets){
             _bulletGroup = bullets.getBulletGroup();

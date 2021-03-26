@@ -1,0 +1,43 @@
+body{
+    background-color: #44df5e;
+    background-image: url("lessinia_background.jpg");
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media only screen and (max-width: 900px) {
+    #game {
+        position: fixed;
+        left: 20%;
+    }
+
+    .button{
+        width: 20%;
+        height: 10%;
+        font-size: large;
+    }
+}
+
+#game {
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    margin-top: -300px;
+    margin-left: -400px;
+}
+
+#commands {
+    position: fixed;
+    top: 80%;
+    
+}
+
+.button{
+    width: 300px;
+    height: 200px;
+    font-size: xx-large;
+}

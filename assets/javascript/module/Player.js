@@ -2,10 +2,8 @@
  * Created by stryker on 2014.03.05..
  * Player module
  */
-define(['module/HUD'],function(HUD){
 
-    //Private Variables
-    var _game = null,
+var _game = null,
         _health = null,
         _lives = null,
         _score = null,
@@ -20,6 +18,11 @@ define(['module/HUD'],function(HUD){
         _aliens = null,
         _shootingEvent = null,
         _bulletSpeed = null;
+
+
+define(['module/HUD'],function(HUD){
+
+    //Private Variables
 
     var _fireBullet = function(){
         _bullet = _bulletGroup.getFirstExists(false);

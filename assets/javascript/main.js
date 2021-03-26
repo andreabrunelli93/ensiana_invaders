@@ -1,7 +1,7 @@
 /**
  * Created by stryker on 2014.03.05..
  */
-require(['state/Load','state/Start','state/Play','state/End','lib/phaser-no-physics.min'],function(Load,Start,Play,End){
+require(['state/Load','state/Start','state/Play', 'state/Continue', 'state/End','lib/phaser-no-physics.min'],function(Load,Start,Play,Continue,End){
 
     height = $(window).height();
     width = $(window).width();
@@ -25,6 +25,10 @@ require(['state/Load','state/Start','state/Play','state/End','lib/phaser-no-phys
     //Play State
     Play.init(_game,'End');
     _game.state.add('Play',Play.getPlayState());
+
+     //Continue State
+     Play.init(_game,'End');
+     _game.state.add('Continue',Continue.getContinueState());
     
     //End State
     End.init(_game,'Play');

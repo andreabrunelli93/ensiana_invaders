@@ -8,7 +8,7 @@ define(['module/Background','module/Player','module/Aliens','module/Bullets','mo
     var aliens = null;
     
     //Playing State
-    var _Play = {        
+    var _Continue = {        
         create: function(){
                                    
             Background.create();
@@ -28,7 +28,7 @@ define(['module/Background','module/Player','module/Aliens','module/Bullets','mo
             Player.setBulletGroup(Bullets.create(10,'bullet',100));
             Player.setExplosionGroup(Explosions.create(1,'kaboom'));
             
-            init_rows= 3;
+            init_rows= init_rows +1;
 
             //Setting up Aliens
             var alienConfiguration = {
@@ -67,8 +67,8 @@ define(['module/Background','module/Player','module/Aliens','module/Bullets','mo
             _game = game;
             _nextState = nextState;
         },
-        getPlayState: function(){
-            return(_Play);
+        getContinueState: function(){
+            return(_Continue);
         }
     }
 })

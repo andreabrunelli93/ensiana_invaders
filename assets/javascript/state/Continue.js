@@ -13,18 +13,22 @@ define(['module/Background','module/Player','module/Aliens','module/Bullets','mo
                                    
             Background.create();
             
-            HUD.createStat(0,100,3);
+            HUD.createStat(last_score,last_health,last_lives);
+
+            console.log("salute ", last_health, "vite ", last_lives, "punteggio ", last_score)
             
             //Setting up Player
-            var playerConfiguration = {
-                health: 100,
-                lives: 3,
-                score: 0,
+            var continueConfiguration = {
+                health: last_health,
+                lives: last_lives,
+                score: last_score,
                 firingTime: 300,
                 bulletSpeed: 500
             };
-            
-            Player.create(playerConfiguration);
+
+            console.log('abbiamo continuato il gioco');
+
+            Player.create(continueConfiguration);
             Player.setBulletGroup(Bullets.create(10,'bullet',100));
             Player.setExplosionGroup(Explosions.create(1,'kaboom'));
             

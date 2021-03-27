@@ -28,12 +28,12 @@ define(function(){
         },
         createStat: function(score,health,lives){
             _score = score;
-            _scoreText = _game.add.text(10, 10, "Score: " + score, { fontSize: '34px', fill: '#fff' });
+            _scoreText = _game.add.text(10, 10, "Pònti: " + score, { fontSize: '34px', fill: '#fff' });
             _health = health;
-            _healthText = _game.add.text(10, 50, "Health: " + health, { fontSize: '34px', fill: '#fff' });
+            _healthText = _game.add.text(10, 50, "Fià: " + health, { fontSize: '34px', fill: '#fff' });
             _lives = lives;
             last_lives = lives;
-            _livesText = _game.add.text(10, 90, "Lives: " + lives, { fontSize: '34px', fill: '#fff' });
+            _livesText = _game.add.text(10, 90, "Ensiane: " + lives, { fontSize: '34px', fill: '#fff' });
             
             //_stateText.visible = false;
         },
@@ -48,7 +48,7 @@ define(function(){
             console.log("vite ", lives, "last_lives ", last_lives);
         },
         updateScoreText: function(score){
-            _scoreText.text = "Ponti: "+(_score+=score);
+            _scoreText.text = "Pònti: "+(_score+=score);
             last_score = _score;
             console.log("punteggio ",_score , "last_score ", last_score);
         },

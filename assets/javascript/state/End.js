@@ -8,7 +8,7 @@ define(['module/HUD'],function(HUD){
     var _End = {
         create: function(){
 
-            var title_end = 'I tà copà \n Te meso in scarsela: ' + last_score+ ' ponti \n Maca el boton';
+            var title_end = 'I tà copà \nTe meso in scarsela: ' + last_score+ ' ponti \nMaca el boton';
             HUD.createTitle(title_end);
                         
             //Starting the Play state after the spacebar is down
